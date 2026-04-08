@@ -1213,6 +1213,14 @@ section {
 
   .nav-item--dropdown {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.2rem;
+  }
+
+  .nav-item--dropdown > a {
+    align-self: flex-start;
   }
 
   .nav-item--dropdown::after {
@@ -1227,18 +1235,23 @@ section {
     pointer-events: auto;
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-    padding: 0.35rem 0 0 0.75rem;
-    margin: 0;
+    align-items: stretch;
+    gap: 0.25rem;
+    padding: 0.15rem 0 0.15rem 1rem;
+    margin: 0 0 0 0.35rem;
     min-width: 0;
     border: none;
+    border-left: 2px solid var(--accent-dim);
+    border-radius: 0;
     box-shadow: none;
     background: transparent;
   }
 
   .nav-dropdown a {
-    padding: 0.2rem 0;
+    padding: 0.28rem 0;
     white-space: normal;
+    font-size: 0.9rem;
+    color: var(--text-muted);
   }
 }
 
