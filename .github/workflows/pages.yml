@@ -1,6 +1,9 @@
-# Static site → GitHub Pages (Actions).
-# One-time: repo Settings → Pages → Build and deployment → Source: GitHub Actions
-# (Without that, deploy fails — configure-pages is omitted; it errors when Pages isn’t enabled yet.)
+# Publishes the static site to branch `gh-pages` (reliable; no deploy-pages API).
+#
+# One-time after first successful run:
+#   Repo → Settings → Pages → Build and deployment
+#   Source: Deploy from a branch
+#   Branch: gh-pages  /  Folder: / (root)
 
 name: Deploy GitHub Pages
 
@@ -10,26 +13,30 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
+      - name: Prepare site (exclude git metadata and workflows)
+        run: |
+          mkdir -p _site
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='_site' \
+            . _site/
 
-      - id: deployment
-        uses: actions/deploy-pages@v5
+      - name: Push to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
+          force_orphan: true
