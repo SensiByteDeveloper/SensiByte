@@ -28,6 +28,7 @@ const I18N = {
       footer_company: "Company: SensiByte BV",
       footer_kvk: "KvK: 93467168",
       footer_vat: "VAT: NL866414150B01",
+      portrait_alt: "Tim, speaker and trainer",
     },
     home: {
       page_title: "SensiByte · IT consultancy with a sensible approach",
@@ -72,8 +73,10 @@ const I18N = {
     training: {
       page_title: "Training · SensiByte",
       overview_title: "Training",
-      overview_lead:
-        "Focused sessions on product practice: from design thinking to how Agile and DevOps reinforce each other, plus tailored in company programmes.",
+      overview_lead_p1:
+        "Focused sessions on product practice: from design thinking to the synergy between Agile and DevOps, complemented by tailored work inside organisations.",
+      overview_lead_p2:
+        "Our trainers combine years of experience at the intersection of business and IT with deep practical knowledge. Participants leave with concrete insights and tools they can apply straight away.",
       card_dt: "Design Thinking",
       card_dt_desc: "Micro and Mini workshops, plus tailored Design Thinking as facilitator or trainer.",
       card_ad: "Agile vs DevOps",
@@ -172,6 +175,7 @@ const I18N = {
       footer_company: "Bedrijfsnaam: SensiByte BV",
       footer_kvk: "KvK nummer: 93467168",
       footer_vat: "BTW nummer: NL866414150B01",
+      portrait_alt: "Tim, spreker en trainer",
     },
     home: {
       page_title: "SensiByte · IT consultancy met gezond verstand",
@@ -216,8 +220,10 @@ const I18N = {
     training: {
       page_title: "Trainingen · SensiByte",
       overview_title: "Trainingen",
-      overview_lead:
-        "Sessies over product practice: van design thinking tot hoe Agile en DevOps elkaar versterken, plus maatwerk in company.",
+      overview_lead_p1:
+        "Sessies over product practice: van design thinking tot de synergie tussen Agile en DevOps, aangevuld met maatwerk binnen organisaties.",
+      overview_lead_p2:
+        "Onze trainers combineren jarenlange ervaring op het snijvlak van business en IT met diepgaande praktijkkennis. Zo zorgen we ervoor dat deelnemers altijd naar huis gaan met concrete inzichten en direct toepasbare handvatten.",
       card_dt: "Design Thinking",
       card_dt_desc: "Micro en Mini workshops, plus maatwerk Design Thinking als facilitator of trainer.",
       card_ad: "Agile vs DevOps",
@@ -339,6 +345,11 @@ function applyI18n(lang) {
     const key = el.getAttribute("data-i18n-aria");
     if (!key) return;
     el.setAttribute("aria-label", t(lang, key));
+  });
+  document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-alt");
+    if (!key) return;
+    el.setAttribute("alt", t(lang, key));
   });
 
   // Update lang switcher UI
