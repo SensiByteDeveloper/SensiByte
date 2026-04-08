@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="training_custom.page_title">Training · Custom programmes · SensiByte</title>
+    <meta name="description" content="Custom product management training: SensiByte." />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("sensibyte-theme");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="icon" href="../assets/images/sensibyte-logo.png" type="image/png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="../index.html">
+          <span class="owl-wrap" aria-hidden="true">
+            <img
+              class="brand-icon-img brand-icon-img--light"
+              src="../assets/images/sensibyte-logo.png"
+              alt=""
+              decoding="async"
+            />
+            <img
+              class="brand-icon-img brand-icon-img--dark"
+              src="../assets/images/sensibyte-logo-dark.png"
+              alt=""
+              decoding="async"
+            />
+          </span>
+          <span class="brand-text">
+            <span class="brand-name" data-i18n="common.brand">SENSIBYTE</span>
+            <span class="brand-tagline" data-i18n="common.tagline">PRODUCT · CONSULTANCY · TRAINING</span>
+          </span>
+        </a>
+
+        <button type="button" class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" data-i18n-aria="common.open_menu" aria-label="Open menu">☰</button>
+
+        <nav class="nav-wrap" aria-label="Primary">
+          <div class="nav-main">
+            <a href="../index.html#services" data-i18n="common.nav_services">Services</a>
+            <div class="nav-item nav-item--dropdown">
+              <a href="index.html" class="nav-training-trigger" aria-haspopup="true" data-i18n="common.nav_training">Training</a>
+              <div class="nav-dropdown" role="group">
+                <a href="index.html" data-i18n="common.nav_training_overview">Overview</a>
+                <a href="design-thinking.html" data-i18n="common.nav_training_dt">Design Thinking</a>
+                <a href="agile-vs-devops.html" data-i18n="common.nav_training_ad">Agile vs DevOps</a>
+                <a href="custom.html" aria-current="page" data-i18n="common.nav_training_custom">Custom</a>
+              </div>
+            </div>
+            <a href="../index.html#about" data-i18n="common.nav_about">About</a>
+            <a href="../index.html#contact" data-i18n="common.nav_contact">Contact</a>
+            <a href="../projects/index.html" data-i18n="common.nav_projects">Projects</a>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle theme">☾</button>
+          <div class="lang">
+            <button type="button" class="lang-toggle" aria-expanded="false" aria-haspopup="listbox" aria-label="Language">🇬🇧</button>
+            <div class="lang-panel" role="listbox" aria-label="Language">
+              <button type="button" class="lang-option" data-lang="en" role="option" aria-selected="true">
+                <span class="flag" aria-hidden="true">🇬🇧</span>
+                <span data-i18n="common.lang_en">English</span>
+                <span class="check" aria-hidden="true">✓</span>
+              </button>
+              <button type="button" class="lang-option" data-lang="nl" role="option" aria-selected="false">
+                <span class="flag" aria-hidden="true">🇳🇱</span>
+                <span data-i18n="common.lang_nl">Nederlands</span>
+                <span class="check" aria-hidden="true">✓</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="wrap">
+          <h1 data-i18n="training_custom.title">Custom training</h1>
+          <p class="page-lead" data-i18n="training_custom.lead"></p>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap prose">
+          <p data-i18n="training_custom.body_p1"></p>
+          <h2 data-i18n="training_custom.body_h2_1"></h2>
+          <ul>
+            <li data-i18n="training_custom.body_li_1"></li>
+            <li data-i18n="training_custom.body_li_2"></li>
+            <li data-i18n="training_custom.body_li_3"></li>
+          </ul>
+          <p data-i18n="training_custom.body_p2"></p>
+          <p><a href="../index.html#contact" data-i18n="home.cta_contact">Get in touch</a></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div class="footer-col">
+          <p data-i18n="common.footer_rights">SensiByte: product, consultancy & training.</p>
+          <p class="footer-email">
+            <a href="mailto:contact@sensibyte.nl" data-i18n="common.footer_email">contact@sensibyte.nl</a>
+          </p>
+          <div class="footer-legal">
+            <p data-i18n="common.footer_company">Company: SensiByte BV</p>
+            <p data-i18n="common.footer_kvk">KvK: 93467168</p>
+            <p data-i18n="common.footer_vat">VAT: NL866414150B01</p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/SensiByteDeveloper" target="_blank" rel="noopener noreferrer" data-i18n="common.footer_github">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/i18n.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
