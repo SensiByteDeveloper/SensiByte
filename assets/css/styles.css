@@ -198,17 +198,26 @@ svg {
   }
 }
 
+.nav-wrap {
+  display: flex;
+  align-items: center;
+}
+
 .nav-main {
   display: flex;
   align-items: center;
   gap: 0.25rem 1.25rem;
   flex-wrap: wrap;
+  min-height: 44px;
 }
 
 .nav-main a {
   color: var(--text-muted);
   font-size: 0.92rem;
   font-weight: 500;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-main a:hover,
@@ -218,6 +227,8 @@ svg {
 
 .nav-item--dropdown {
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
 /* Onzichtbare hover-brug (geen padding op item = zelfde verticale uitlijning als andere links) */
@@ -284,6 +295,7 @@ svg {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-height: 44px;
 }
 
 /* Buttons */
@@ -327,8 +339,8 @@ svg {
 }
 
 .icon-btn {
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   padding: 0;
   border-radius: var(--radius-sm);
   border: 1px solid var(--border);
@@ -1177,8 +1189,10 @@ section {
     flex-basis: 100%;
     display: none;
     flex-direction: column;
+    align-items: flex-start;
     gap: 0.5rem;
     padding-top: 0.5rem;
+    min-height: 0;
   }
 
   .nav-wrap.open {
@@ -1194,6 +1208,7 @@ section {
     align-items: flex-start;
     width: 100%;
     gap: 0.35rem;
+    min-height: 0;
   }
 
   .nav-item--dropdown {
