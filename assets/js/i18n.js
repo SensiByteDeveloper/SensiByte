@@ -5,7 +5,7 @@ const I18N = {
   en: {
     common: {
       brand: "SENSIBYTE",
-      tagline: "IT CONSULTANCY · SOUND JUDGMENT",
+      tagline: "IT CONSULTANCY · SENSIBLE APPROACH",
       nav_home: "Home",
       nav_services: "Services",
       nav_about: "About",
@@ -22,7 +22,7 @@ const I18N = {
       theme_dark: "Dark theme",
       open_menu: "Open menu",
       close_menu: "Close menu",
-      footer_rights: "SensiByte · IT consultancy with sound judgment.",
+      footer_rights: "SensiByte · IT consultancy with a sensible approach.",
       footer_email: "contact@sensibyte.nl",
       footer_github: "GitHub",
       footer_company: "Company: SensiByte BV",
@@ -30,8 +30,8 @@ const I18N = {
       footer_vat: "VAT: NL866414150B01",
     },
     home: {
-      page_title: "SensiByte · IT consultancy with sound judgment",
-      hero_title: "IT consultancy with sound judgment",
+      page_title: "SensiByte · IT consultancy with a sensible approach",
+      hero_title: "IT consultancy with a sensible approach",
       hero_lead: "Product, consultancy and training for organisations that want to move forward",
       hero_quote_a: "We make assumptions explicit",
       hero_quote_b: "and test them with measurable results.",
