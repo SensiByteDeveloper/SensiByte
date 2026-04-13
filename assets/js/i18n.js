@@ -147,6 +147,8 @@ const I18N = {
         "Hands Up! is a project that showcases how we approach product development: clear scope, iterative delivery, and attention to user experience. Details and screenshots can be shared when the project is ready for a public launch.",
       body_p2:
         "For now, this page is a placeholder for stakeholders who already have the link. Contact SensiByte for more information.",
+      body_p3:
+        "DJs control which capabilities are offered to the audience: requests, lotteries, tips, and more can be enabled or disabled per event. Their own website and social profiles are surfaced prominently so guests can follow, tag, and amplify the DJ online.",
     },
   },
   nl: {
@@ -294,6 +296,8 @@ const I18N = {
         "Hands Up! is een project dat laat zien hoe we productontwikkeling aanpakken: duidelijke scope, iteratieve delivery en aandacht voor gebruikerservaring. Details en screenshots kunnen gedeeld worden wanneer het project publiek klaar is.",
       body_p2:
         "Voor nu is deze pagina een placeholder voor stakeholders die de link al hebben. Neem contact op met SensiByte voor meer informatie.",
+      body_p3:
+        "De DJ bepaalt zelf welke functies het publiek krijgt: verzoeken, loterij, fooi/support en meer zijn per event aan of uit te zetten. Eigen website en socialprofielen worden duidelijk uitgelicht, zodat gasten de DJ kunnen volgen, taggen en online zichtbaarheid geven.",
     },
   },
 };
