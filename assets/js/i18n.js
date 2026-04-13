@@ -149,6 +149,8 @@ const I18N = {
         "For now, this page is a placeholder for stakeholders who already have the link. Contact SensiByte for more information.",
       body_p3:
         "DJs control which capabilities are offered to the audience: requests, lotteries, tips, and more can be enabled or disabled per event. Their own website and social profiles are surfaced prominently so guests can follow, tag, and amplify the DJ online.",
+      body_p4:
+        "Live features need internet access for guests and the DJ. DJs get one generic QR code they can print so the audience always reaches the same entry point.",
     },
   },
   nl: {
@@ -298,6 +300,8 @@ const I18N = {
         "Voor nu is deze pagina een placeholder voor stakeholders die de link al hebben. Neem contact op met SensiByte voor meer informatie.",
       body_p3:
         "De DJ bepaalt zelf welke functies het publiek krijgt: verzoeken, loterij, fooi/support en meer zijn per event aan of uit te zetten. Eigen website en socialprofielen worden duidelijk uitgelicht, zodat gasten de DJ kunnen volgen, taggen en online zichtbaarheid geven.",
+      body_p4:
+        "Live functies vragen om internet voor gasten en de DJ. Er is één generieke DJ-QR die je kunt printen, zodat het publiek bij elk optreden dezelfde ingang heeft.",
     },
   },
 };
