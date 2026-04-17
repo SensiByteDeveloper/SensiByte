@@ -1040,6 +1040,27 @@ section {
   opacity: 1;
 }
 
+.link-card--project {
+  text-decoration: none;
+}
+
+.link-card--project .project-card-kicker {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--accent) 85%, var(--text-muted));
+}
+
+.link-card--project .project-card-url {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
 .link-card strong {
   font-size: 1.05rem;
 }

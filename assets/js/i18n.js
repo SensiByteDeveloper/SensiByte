@@ -136,6 +136,11 @@ const I18N = {
       placeholder_title: "Case studies",
       placeholder_desc:
         "Detailed write ups will appear here. Until then, explore public work on GitHub or reach out for references under NDA.",
+      handsup_title: "HandsUp!",
+      handsup_kicker: "Pilot · live events · product by SensiByte",
+      handsup_desc:
+        "HandsUp! is a pilot around nights out: guests use their phones for requests and discovery, DJs control what is live, and social channels (including Instagram) help the crowd highlight the artist. We are testing hypotheses on engagement and fairness. The public site stays high-level on purpose: concept and branding remain with SensiByte BV.",
+      handsup_url_label: "handsupdj.com",
     },
     handsup: {
       page_title: "Hands Up! · SensiByte",
@@ -287,6 +292,11 @@ const I18N = {
       placeholder_title: "Case studies",
       placeholder_desc:
         "Uitgebreide cases verschijnen hier. Tot die tijd: bekijk publiek werk op GitHub of vraag referenties onder NDA aan.",
+      handsup_title: "HandsUp!",
+      handsup_kicker: "Pilot · live events · product van SensiByte",
+      handsup_desc:
+        "HandsUp! is een pilot rond uitgaan: gasten gebruiken hun mobiel voor verzoeken en ontdekking, DJs bepalen wat er live staat, en social kanalen (waaronder Instagram) helpen het publiek de artiest zichtbaar te maken. We toetsen hypothesen rond betrokkenheid en eerlijke UX. De publieke site blijft bewust hoog-over: concept en merk rusten bij SensiByte BV.",
+      handsup_url_label: "handsupdj.com",
     },
     handsup: {
       page_title: "Hands Up! · SensiByte",
