@@ -139,7 +139,7 @@ const I18N = {
       handsup_title: "HandsUp!",
       handsup_kicker: "Pilot · live events · product by SensiByte",
       handsup_desc:
-        "HandsUp! is a pilot around nights out: guests use their phones for requests and discovery, DJs control what is live, and social channels (including Instagram) help the crowd highlight the artist. We are testing hypotheses on engagement and fairness. The public site stays high-level on purpose: concept and branding remain with SensiByte BV.",
+        "Guests use their phone in the browser to request songs and boost their place on the ranking. The DJ controls what is live. Through Instagram, the crowd helps promote the DJ. We test hypotheses on engagement and specific willingness to act. The public site stays deliberately high-level: concept and brand remain with SensiByte.",
       handsup_url_label: "handsupdj.com",
     },
     handsup: {
@@ -295,7 +295,7 @@ const I18N = {
       handsup_title: "HandsUp!",
       handsup_kicker: "Pilot · live events · product van SensiByte",
       handsup_desc:
-        "HandsUp! is een pilot rond uitgaan: gasten gebruiken hun mobiel voor verzoeken en ontdekking, DJs bepalen wat er live staat, en social kanalen (waaronder Instagram) helpen het publiek de artiest zichtbaar te maken. We toetsen hypothesen rond betrokkenheid en eerlijke UX. De publieke site blijft bewust hoog-over: concept en merk rusten bij SensiByte BV.",
+        "Gasten gebruiken hun mobiele telefoon om via de browser verzoeknummers aan te vragen en de ranglijst te boosten. De DJ bepaalt wat er live staat. Via Instagram helpt het publiek de DJ te promoten. We toetsen hypotheses rond betrokkenheid en bepaalde handelingsbereidheid. De publieke site blijft bewust hoog-over: concept en merk rusten bij SensiByte.",
       handsup_url_label: "handsupdj.com",
     },
     handsup: {
