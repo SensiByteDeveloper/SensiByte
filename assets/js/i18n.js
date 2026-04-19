@@ -347,6 +347,10 @@ function applyI18n(lang) {
       document.title = value;
       return;
     }
+    // Missing key: keep non-empty HTML fallback instead of showing raw "section.key"
+    if (value === key && el.textContent.trim() !== "") {
+      return;
+    }
     el.textContent = value;
   });
   document.querySelectorAll("[data-i18n-html]").forEach((el) => {
